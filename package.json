@@ -1,16 +1,1 @@
-{
-  "name": "luludamobilete-sociedade",
-  "version": "5.0.0",
-  "private": true,
-  "description": "LULUDAMOBILETE V5 com navegação persistente, Rádio EVO automática, chat e minigames.",
-  "main": "app-server.js",
-  "scripts": {
-    "start": "node app-server.js"
-  },
-  "engines": {
-    "node": ">=20"
-  },
-  "dependencies": {
-    "ws": "^8.18.0"
-  }
-}
+{"name":"luludamobilete-sociedade","version":"6.0.0","private":true,"description":"LULUDAMOBILETE V6: analytics, XP e overlay animado.","main":"app-server.js","scripts":{"start":"node app-server.js"},"engines":{"node":">=20"},"dependencies":{"ws":"^8.18.0","pg":"^8.13.1"}}

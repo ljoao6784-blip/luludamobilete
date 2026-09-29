@@ -15,9 +15,14 @@ let adminReady = false;
 let promoteTimer = null;
 let lastSkipAt = 0;
 
-process.env.PORT = String(INTERNAL_PORT);
+const ASSET_PORT = Number(process.env.ASSET_PORT || 3102);
+process.env.PORT = String(ASSET_PORT);
 process.env.ADMIN_TOKEN = INTERNAL_ADMIN;
 require('./server.js');
+process.env.PORT = String(INTERNAL_PORT);
+process.env.ASSET_PORT = String(ASSET_PORT);
+process.env.ADMIN_TOKEN = INTERNAL_ADMIN;
+require('./backend-v6.js');
 process.env.PORT = String(PUBLIC_PORT);
 
 function sendAdmin(action, id) {
