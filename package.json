@@ -1,0 +1,16 @@
+{
+  "name": "luludamobilete-sociedade",
+  "version": "4.0.0",
+  "private": true,
+  "description": "LULUDAMOBILETE V4 monolítico para Render com chat, Rádio EVO e minigames.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
